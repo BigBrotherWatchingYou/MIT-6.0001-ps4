@@ -1,6 +1,6 @@
 # Problem Set 4A
 # Name: <your name here>
-# Collaborators:
+# Collaborators: no
 # Time Spent: x:xx
 
 def get_permutations(sequence):

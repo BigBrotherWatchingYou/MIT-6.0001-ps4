@@ -70,7 +70,9 @@ class Message(object):
             self.message_text (string, determined by input text)
             self.valid_words (list, determined using helper function load_words)
         '''
-        pass #delete this line and replace with your code here
+        self.message_text = input(str('please type a message'))
+        return self.message_text
+        '''what the hell is self.valid_words this need to be solved'''
 
     def get_message_text(self):
         '''
@@ -78,8 +80,8 @@ class Message(object):
         
         Returns: self.message_text
         '''
-        pass #delete this line and replace with your code here
-
+        print('your message text is:' + self.message_text)
+        
     def get_valid_words(self):
         '''
         Used to safely access a copy of self.valid_words outside of the class.

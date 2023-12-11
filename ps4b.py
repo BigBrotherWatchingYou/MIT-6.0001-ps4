@@ -70,9 +70,16 @@ class Message(object):
             self.message_text (string, determined by input text)
             self.valid_words (list, determined using helper function load_words)
         '''
-        self.message_text = input(str('please type a message'))
-        return self.message_text
-        '''what the hell is self.valid_words this need to be solved'''
+        text = input('please type a message')
+        self.message_text = text
+        
+        #let the user input a message
+        if is_word(self.message_text):
+            return self.message_text  #check are there any spelling mistakes in message
+        
+        else:#there are mistakes in message, so the user have to input again
+            print("there's an error, type it again")
+            return __init__(self, text)
 
     def get_message_text(self):
         '''

@@ -69,3 +69,7 @@ Miscellaneous Symbols
 n√a the nth root of a
 | a | the modulus of a
 n! n factorial
+
+2^3 = 2 cubed
+2^2 = 2 squared
+2^4 = 2 to the fourth power

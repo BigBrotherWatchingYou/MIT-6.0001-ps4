@@ -73,3 +73,11 @@ n! n factorial
 2^3 = 2 cubed
 2^2 = 2 squared
 2^4 = 2 to the fourth power
+
+## constant &  variables
+plug in
+Newton's law of gravitation: F = G*M1*M2/r^2
+M1,M2:masses of the two bodies
+G: Gravitational constant
+F: Force due to gravity
+r: distance between the masses

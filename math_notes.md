@@ -81,3 +81,9 @@ M1,M2:masses of the two bodies
 G: Gravitational constant
 F: Force due to gravity
 r: distance between the masses
+
+## derivative
+geometry interperetation:line to y=f(x)
+finding the tangent line to some graph of some function at some point
+
+

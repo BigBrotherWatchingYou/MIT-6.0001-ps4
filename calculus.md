@@ -2,10 +2,14 @@
 $a \ne 0$
 $(ax^2+bx+c = 25)$
 $$ x= {-b \pm \sqrt{b^2-4ac} \over 2a} $$
-$b \sqrt 22$
+$b \sqrt 22$,
+$a \leq b$
+
+
 ## The Cauchy-Schwarz Inequality
 $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
-....
+
+
 
 
 # limits

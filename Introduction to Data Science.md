@@ -18,6 +18,18 @@ every nd record is chosen
 ### quota
 
 # type of statictics
+## Descriptive statistics
+0. Describe data by using summary
+1. use s the data to provid edescriptions of the population, either through numerical calculations ro graphs or tables.
+2. mainly focus on the main characteristics of data.
+3. provide a graphical summary of the data
+### Descriptive statistics are broken down into two categories:
+1. Measures of Central tendency
+2. Measures of Variability(spread)
+## Inferential statistics
+1. makes inferences and predictions based on a sample 
+2. generalizes a large dataset and applies probability to draw a conclusion.
+3.  allow us to infer data parameters based on a statistical model using a sample 
 ## Measure of Centre
 Mean
 Median
@@ -27,3 +39,4 @@ Range
 Inter Quartile Range
 Variance
 Standard Deviation
+

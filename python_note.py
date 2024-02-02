@@ -4,4 +4,4 @@ class car(object):
         self.wheels = w
         self.doors = d
 mycar = car(mycar,2,4)
-# this one in wrong: car(mycar,4,2)
+# this one in wrong: car(mycar,4,2)     car is just like a "kx+b", and mycar= y----y=kx+b

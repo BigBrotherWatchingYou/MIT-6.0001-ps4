@@ -22,4 +22,4 @@ class Animal(object):
         self.name = newname
     def _str_(self):
         #turn it into str
-        return "animal:"+str(self.name)+":"+str(self.age)
+        return "animal:"+str(self.name)+"age:"+str(self.age)

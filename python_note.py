@@ -23,3 +23,8 @@ class Animal(object):
     def _str_(self):
         #turn it into str
         return "animal:"+str(self.name)+"age:"+str(self.age)
+    
+    # how it works:  
+    a = Animal(lion)
+    a.get_age(55)
+    

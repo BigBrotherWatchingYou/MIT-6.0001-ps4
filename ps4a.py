@@ -35,7 +35,9 @@ def get_permutations(sequence):
             i = 0
             for char in element:
                 # get "a", "b", "c"from "abc"
-                permutations_new.append(element[0:i] + sequence[0] + element[i:])
+                permutations_new.append(element[0:i]  + sequence[0] + element[i:])
+                ''' when i = 0
+                 element[0:1]='''
                 i += 1
             permutations_new.append(element + sequence[0])
         return permutations_new

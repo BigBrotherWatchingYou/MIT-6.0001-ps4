@@ -22,7 +22,22 @@ def get_permutations(sequence):
     Note: depending on your implementation, you may return the permutations in
     a different order than what is listed here.
     '''
-    
+    permutations = []
+    if len(sequence) == 1:
+        permutations.append(sequence)
+        return permutations
+    else:
+        permutations = get_permutations(sequence[1:])
+        permutations_new = []
+        for element in permutations:
+            # get "abc" from permutations["abc","acb"]
+            i = 0
+            for char in element:
+                # get "a", "b", "c"from "abc"
+                permutations_new.append(element[0:i] + sequence[0] + element[i:])
+                i += 1
+            permutations_new.append(element + sequence[0])
+        return permutations_new
     pass #delete this line and replace with your code here
 
 if __name__ == '__main__':

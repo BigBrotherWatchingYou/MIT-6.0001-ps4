@@ -29,6 +29,10 @@ class Animal(object):
     class Dog(Animal):
         def speak(self):
           print("Ruff Ruff")
-    d= Dog(7)
+    d = Dog(7)
     d.set_name("Ruffles")
     d.speak()
+
+    # timing a programm
+    # use the time module
+    import time

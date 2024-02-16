@@ -24,6 +24,7 @@ def get_permutations(sequence):
     '''
     permutations = []
     if len(sequence) == 1:
+        # every  'else'loop starts from the second letter
         permutations.append(sequence)
         return permutations
     else:

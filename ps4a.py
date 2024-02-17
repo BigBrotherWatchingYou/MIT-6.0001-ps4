@@ -37,22 +37,27 @@ def get_permutations(sequence):
                 # get "a", "b", "c"from "abc"
                 permutations_new.append(element[0:i]  + sequence[0] + element[i:])
                 ''' when i = 0
-                 element[0:1]='''
+                sequence= 'bc'
+                 append= None + 'a' + 'b' '''
                 i += 1
             permutations_new.append(element + sequence[0])
+            ''' append= 'a'+'b'+'bc'+'b' '''
         return permutations_new
-    pass #delete this line and replace with your code here
+def get_permutations(s):
+    if len(s) <= 1:
+        return [s]
+    else:
+        perm_list = []
+        for i in range(len(s)):
+            for char in permutations(s[:i] + s[i+1:]):
+                perm_list.append(s[i] + char)
+        return perm_list
 
-if __name__ == '__main__':
-#    #EXAMPLE
-#    example_input = 'abc'
-#    print('Input:', example_input)
-#    print('Expected Output:', ['abc', 'acb', 'bac', 'bca', 'cab', 'cba'])
-#    print('Actual Output:', get_permutations(example_input))
-    
-#    # Put three example test cases here (for your sanity, limit your inputs
-#    to be three characters or fewer as you will have n! permutations for a 
-#    sequence of length n)
+# Test the function with the string 'abc'
+permutation_list = permutations('abc')
+for perm in permutation_list:
+    print(perm)
 
-    pass #delete this line and replace with your code here
+# Test the function with the string 'abc'
+permutations(list('abc'))
 

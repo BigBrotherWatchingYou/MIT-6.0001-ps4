@@ -22,42 +22,21 @@ def get_permutations(sequence):
     Note: depending on your implementation, you may return the permutations in
     a different order than what is listed here.
     '''
-    permutations = []
-    if len(sequence) == 1:
-        # every  'else'loop starts from the second letter
-        permutations.append(sequence)
-        return permutations
-    else:
-        permutations = get_permutations(sequence[1:])
-        permutations_new = []
-        for element in permutations:
-            # get "abc" from permutations["abc","acb"]
-            i = 0
-            for char in element:
-                # get "a", "b", "c"from "abc"
-                permutations_new.append(element[0:i]  + sequence[0] + element[i:])
-                ''' when i = 0
-                sequence= 'bc'
-                 append= None + 'a' + 'b' '''
+
+class get_permutations(s):
+    data = str(s)
+    permutation = []
+    def permutate(data, i):
+        if i >= len(data):
+            permutation.append(data)
+        else:
+            for j in range[i:len(data)]:
+                data[i],data[j] = data[j],data[i]
                 i += 1
-            permutations_new.append(element + sequence[0])
-            ''' append= 'a'+'b'+'bc'+'b' '''
-        return permutations_new
-def get_permutations(s):
-    if len(s) <= 1:
-        return [s]
-    else:
-        perm_list = []
-        for i in range(len(s)):
-            for char in permutations(s[:i] + s[i+1:]):
-                perm_list.append(s[i] + char)
-        return perm_list
-
-# Test the function with the string 'abc'
-permutation_list = permutations('abc')
-for perm in permutation_list:
-    print(perm)
-
+                permutate(data,i)
+                data[i],data[j] = data[j],[i]
+    
+    
 # Test the function with the string 'abc'
 permutations(list('abc'))
 

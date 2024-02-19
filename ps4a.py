@@ -1,9 +1,9 @@
 # Problem Set 4A
 # Name: <your name here>
-# Collaborators: no
+# Collaborators:
 # Time Spent: x:xx
 
-def get_permutations(sequence):
+class get_permutations(sequence):
     '''
     Enumerate all permutations of a given string
 
@@ -22,21 +22,33 @@ def get_permutations(sequence):
     Note: depending on your implementation, you may return the permutations in
     a different order than what is listed here.
     '''
-
-class get_permutations(s):
-    data = str(s)
     permutation = []
-    def permutate(data, i):
+    
+    def permutate(data, i=0):
+        
         if i >= len(data):
             permutation.append(data)
+            return permutation
         else:
             for j in range[i:len(data)]:
-                data[i],data[j] = data[j],data[i]
+                data[i], data[j] = data[j], data[i]
                 i += 1
-                permutate(data,i)
-                data[i],data[j] = data[j],[i]
+                permutate(data, i)
+
+
+        
     
+
+if __name__ == '__main__':
+#    #EXAMPLE
+#    example_input = 'abc'
+#    print('Input:', example_input)
+#    print('Expected Output:', ['abc', 'acb', 'bac', 'bca', 'cab', 'cba'])
+#    print('Actual Output:', get_permutations(example_input))
     
-# Test the function with the string 'abc'
-permutations(list('abc'))
+#    # Put three example test cases here (for your sanity, limit your inputs
+#    to be three characters or fewer as you will have n! permutations for a 
+#    sequence of length n)
+
+    pass #delete this line and replace with your code here
 

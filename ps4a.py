@@ -24,16 +24,18 @@ class get_permutations(sequence):
     '''
     permutation = []
     
-    def permutate(data, i=0):
-        
-        if i >= len(data):
-            permutation.append(data)
-            return permutation
+    def permutations_2(input):
+        if len(input) <= 1:
+ 
+            return [input]
+    
         else:
-            for j in range[i:len(data)]:
-                data[i], data[j] = data[j], data[i]
-                i += 1
-                permutate(data, i)
+            permutation = []
+            for char in input:
+                for perm in permutations_2(input.replace(char, '', 1)):
+                    permutation.append(char + perm)
+            return permutation
+
 
 
         

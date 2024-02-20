@@ -1,4 +1,4 @@
-def permutations(s):
+'''def permutations(s):
     result = []
 
     def permute(s, current=""):
@@ -16,19 +16,21 @@ permutations_list = permutations(string)
 print("Permutations of '{}' are:".format(string))
 for perm in permutations_list:
     print(perm)
+'''
 
-
-def permutations_2(s):
-    if len(s) <= 1:
-        return [s]
+def permutations_2(input):
+    if len(input) <= 1:
+ 
+        return [input]
+    
     else:
         perms = []
-        for char in s:
-            for perm in permutations_2(s.replace(char, '', 1)):
+        for char in input:
+            for perm in permutations_2(input.replace(char, '', 1)):
                 perms.append(char + perm)
         return perms
 
 string = 'abc'
 print("Permutations of '{}' are:".format(string))
-for perm in permutations_2(string):
-    print(perm)    
+print(permutations_2(string))
+       

@@ -96,6 +96,8 @@ class Message(object):
         
         Returns: a COPY of self.valid_words
         '''
+        copy_self.valid_words = self
+        #create a list of valid words
         pass #delete this line and replace with your code here
 
     def build_shift_dict(self, shift):
@@ -144,6 +146,10 @@ class PlaintextMessage(Message):
             self.message_text_encrypted (string, created using shift)
 
         '''
+        self.message_text = string(Message)
+        self.text = [load_words(text)]
+        self.shift = shift
+        self.encryption_dict = get_encryption_dict()
         pass #delete this line and replace with your code here
 
     def get_shift(self):
@@ -152,6 +158,7 @@ class PlaintextMessage(Message):
         
         Returns: self.shift
         '''
+        return self.shift
         pass #delete this line and replace with your code here
 
     def get_encryption_dict(self):
@@ -160,6 +167,8 @@ class PlaintextMessage(Message):
         
         Returns: a COPY of self.encryption_dict
         '''
+        self.encryption_dict_copy =
+        return self.encryption_dict_copy
         pass #delete this line and replace with your code here
 
     def get_message_text_encrypted(self):
